@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>College Chatbot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Merriweather&amp;display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+     
+    }
+    .font-merri {
+      font-family: 'Merriweather', serif;
+    }
+
+    #chatPopup {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      width: 380px;
+      height: 650px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      max-height: 580px;
+      z-index: 9999;
+    }
+    #chatHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #007bff;
+      color: white;
+      padding: 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    #chatHeader button {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    #chatbox {
+      padding: 16px;
+      flex-grow: 1;
+      overflow-y: auto;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+    }
+    .user {
+      align-self: flex-end;
+      background-color: #007bff;
+      color: white;
+      margin: 5px 0;
+      padding: 8px 12px;
+      border-radius: 15px 15px 0 15px;
+      max-width: 70%;
+      word-wrap: break-word;
+      text-align: right;
+    }
+    .bot {
+      align-self: flex-start;
+      background-color: #e5e5ea;
+      color: black;
+      margin: 5px 0;
+      padding: 8px 12px;
+      border-radius: 15px 15px 15px 0;
+      max-width: 70%;
+      word-wrap: break-word;
+      text-align: left;
+    }
+    #inputArea {
+      display: flex;
+      padding: 10px;
+      gap: 5px;
+      border-top: 1px solid #ccc;
+    }
+    #inputArea button {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #inputArea button i {
+      pointer-events: none;
+    }
+    #inputArea button:hover {
+      background-color: #005bb5;
+    }
+    #userInput {
+      flex: 1;
+      padding: 6px;
+      font-size: 14px;
+    }
+    button {
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+    .mute-btn {
+      margin-left: 10px;
+      cursor: pointer;
+      user-select: none;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+    .bot a {
+      color: #007bff;
+      text-decoration: underline;
+    }
+    /* Chat icon on right panel */
+    #chatIconRight {
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      font-size: 22px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      transition: background-color 0.3s;
+    }
+    #chatIconRight:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body class="bg-white">
+  <!-- Top colored bar -->
+  <div class="h-1 w-full bg-gradient-to-r from-purple-700 via-yellow-400 to-purple-700">
+  </div>
+  <!-- Header -->
+  <header class="border-b border-gray-200">
+   <div class="max-w-[1500px] mx-auto px-4">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between py-2 gap-2 md:gap-0">
+     <!-- Left: Logos -->
+     <div class="flex items-center gap-2">
+      <img alt="Vishnu logo with text Vishnu Institute of Technology" class="h-12 w-auto" height="50" src="https://bvrithyderabad.edu.in/wp-content/uploads/2023/07/bvrit-hyderabad-engineering-women-college-logo-2.jpg" width="50"/>
+           </div>
+     <!-- Right: Contact and social -->
+     <div class="flex flex-col md:flex-row md:items-center md:space-x-6 text-xs text-gray-800 font-semibold">
+      <div class="flex items-center space-x-1">
+       <i class="fas fa-phone-alt text-[10px]">
+       </i>
+       <span>
+        +91 40 4241 7773
+       </span>
+      </div>
+      <div class="flex items-center space-x-1">
+       <i class="fas fa-envelope text-[10px]">
+       </i>
+       <span>
+        info@bvrithyderabad.edu.in | principal@bvrithyderabad.edu.in
+       </span>
+      </div>
+      <div class="flex items-center space-x-3">
+       <a aria-label="LinkedIn" class="text-gray-800 hover:text-purple-700" href="#">
+        <i class="fab fa-linkedin-in text-sm">
+        </i>
+       </a>
+       <a aria-label="Instagram" class="text-gray-800 hover:text-purple-700" href="#">
+        <i class="fab fa-instagram text-sm">
+        </i>
+       </a>
+       <a aria-label="YouTube" class="text-gray-800 hover:text-purple-700" href="#">
+        <i class="fab fa-youtube text-sm">
+        </i>
+       </a>
+       <a aria-label="Facebook" class="text-gray-800 hover:text-purple-700" href="#">
+        <i class="fab fa-facebook-f text-sm">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- EAMCET etc code line -->
+    <div class="flex justify-end items-center space-x-1 text-[9px] font-semibold text-black mt-1">
+     <span>
+      EAMCET | ECET |
+     </span>
+     <span class="text-purple-700">
+      CODE: BVRW
+     </span>
+     <span>
+      |
+     </span>
+     <span>
+      PGECET CODE:
+     </span>
+     <span class="text-red-700 font-bold">
+      BVRW1
+     </span>
+     <img alt="ERAP logo" class="h-[15px] w-auto" height="15" src="https://storage.googleapis.com/a1aa/image/9f8574be-bef7-44e7-5cbb-e668779af800.jpg" width="20"/>
+     <img alt="VEDIC logo" class="h-[15px] w-auto" height="15" src="https://storage.googleapis.com/a1aa/image/c935386a-9f06-4418-5e5b-0b6a800cb0fe.jpg" width="20"/>
+     <img alt="Bsmart logo" class="h-[15px] w-auto" height="15" src="https://storage.googleapis.com/a1aa/image/fec5a7a9-e3c8-4047-c7ff-623e743575b1.jpg" width="20"/>
+     <img alt="Vishnu logo" class="h-[15px] w-auto" height="15" src="https://storage.googleapis.com/a1aa/image/02a36c57-e79b-438a-8a37-6b81dd4ac0c9.jpg" width="20"/>
+    </div>
+   </div>
+   <!-- Navigation -->
+   <nav class="max-w-[1500px] mx-auto px-4 mt-2">
+    <ul class="flex flex-wrap justify-center md:justify-start gap-4 text-sm font-semibold text-gray-900">
+     <li class="cursor-pointer hover:text-purple-700">
+      Study
+     </li>
+     <li class="cursor-pointer hover:text-purple-700">
+      Discover
+      <i class="fas fa-caret-down text-xs">
+      </i>
+     </li>
+     <li class="cursor-pointer hover:text-purple-700">
+      Research
+      <i class="fas fa-caret-down text-xs">
+      </i>
+     </li>
+     <li class="cursor-pointer hover:text-purple-700">
+      Differentiators
+      <i class="fas fa-caret-down text-xs">
+      </i>
+     </li>
+     <li class="cursor-pointer hover:text-purple-700">
+      Placements
+      <i class="fas fa-caret-down text-xs">
+      </i>
+     </li>
+     <li class="cursor-pointer hover:text-purple-700">
+      News
+      <i class="fas fa-caret-down text-xs">
+      </i>
+     </li>
+     <li class="cursor-pointer hover:text-purple-700">
+      Alumni
+     </li>
+     <li class="cursor-pointer hover:text-purple-700">
+      Approvals
+      <i class="fas fa-caret-down text-xs">
+      </i>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <!-- Main content -->
+  <main class="max-w-[1600px] mx-auto px-4 mt-4 flex flex-col md:flex-row gap-4">
+   <!-- Left: Carousel -->
+   <div class="relative flex-1">
+    <img alt="Four people smiling, two women in pink sarees and two men, one in checked shirt and one in black vest, holding TEDx award on black background" class="w-full h-auto object-cover" height="350" src="https://bvrithyderabad.edu.in/wp-content/uploads/2025/04/Tedx1.jpg" width="900"/>
+    <!-- Left arrow -->
+    <button aria-label="Previous slide" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-2">
+     <i class="fas fa-chevron-left">
+     </i>
+    </button>
+    <!-- Right arrow -->
+    <button aria-label="Next slide" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-2">
+     <i class="fas fa-chevron-right">
+     </i>
+    </button>
+    <!-- Bottom text bar -->
+    <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-90 py-1 text-center">
+      
+     <p class="text-red-600 font-semibold text-lg font-merri">
+      TEDx BVRIT HYDERABAD on 11.04.2025
+     </p>
+    </div>
+   </div>
+   <!-- Right: Info boxes -->
+   <div class="flex flex-col gap-5 w-full md:w-[300px]">
+    <a class="bg-yellow-400 hover:bg-yellow-300 transition-colors p-4 text-center" href="#">
+     <p class="text-purple-700 font-semibold text-xs uppercase">
+      Know more about
+     </p>
+     <p class="font-merri font-bold text-lg text-black">
+      Admissions
+     </p>
+     <i class="fas fa-external-link-alt text-purple-700 mt-1">
+     </i>
+    </a>
+    <a class="bg-purple-700 hover:bg-purple-600 transition-colors p-4 text-center" href="#">
+     <p class="text-yellow-400 font-semibold text-xs uppercase">
+      Know more about
+     </p>
+     <p class="font-merri font-bold text-lg text-white">
+      Under Graduate
+     </p>
+     <i class="fas fa-external-link-alt text-yellow-400 mt-1">
+     </i>
+    </a>
+    <a class="bg-blue-800 hover:bg-blue-700 transition-colors p-4 text-center" href="#">
+     <p class="text-yellow-400 font-semibold text-xs uppercase">
+      Know more about
+     </p>
+     <p class="font-merri font-bold text-lg text-white">
+      Post Graduate
+     </p>
+     <i class="fas fa-external-link-alt text-yellow-400 mt-1">
+     </i>
+    </a>
+    <!-- Chatbot icon button on right panel -->
+    <button id="chatIconRight" aria-label="Open Chatbot" title="Open Chatbot" type="button" onclick="toggleChatbot()">
+     <i class="fas fa-robot"></i>
+    </button>
+   </div>
+  </main>
+  <div id="chatPopup">
+    <div id="chatHeader">
+      <h4>🎓 BVRITH BOT</h4>
+      <button onclick="toggleChatbot()">✖</button>
+    </div>
+
+    <div id="chatbox"></div>
+
+    <div id="inputArea">
+      <input type="text" id="userInput" placeholder="Type your message here" />
+      <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+      <button onclick="startVoice()"><i class="fas fa-microphone"></i></button>
+    </div>
+  </div>
+
+  <script>
+    let greeted = false;
+
+    function toggleChatbot() {
+      const popup = document.getElementById("chatPopup");
+      const isOpening = popup.style.display !== "flex";
+      popup.style.display = isOpening ? "flex" : "none";
+
+      if (isOpening && !greeted) {
+        const greeting = "Hi there! How can I help you today?";
+        appendMessage('bot', greeting);
+        const utterance = new SpeechSynthesisUtterance(greeting);
+        speechSynthesis.speak(utterance);
+        greeted = true;
+      }
+    }
+
+    function makeLinksClickable(text) {
+      const urlRegex = /((https?:\/\/|www\.)[^\s]+)/g;
+      return text.replace(urlRegex, function(url) {
+        const href = url.startsWith('http') ? url : 'http://' + url;
+        return `<a href="${href}" target="_blank">${url}</a>`;
+      });
+    }
+
+    const chatbox = document.getElementById('chatbox');
+    const userInput = document.getElementById('userInput');
+    let currentUtterance = null;
+
+    function appendMessage(sender, text) {
+      const div = document.createElement('div');
+      div.className = sender;
+
+      if (sender === 'bot') {
+        const msgSpan = document.createElement('span');
+        msgSpan.innerHTML = makeLinksClickable(text); // updated here
+
+        const muteBtn = document.createElement('span');
+        muteBtn.className = 'mute-btn';
+        muteBtn.textContent = '🔊';
+        muteBtn.title = 'Mute/Unmute this message';
+
+        let muted = false;
+        const utterance = new SpeechSynthesisUtterance(text);
+
+        if (currentUtterance) {
+          speechSynthesis.cancel();
+        }
+        currentUtterance = utterance;
+        speechSynthesis.speak(utterance);
+
+        muteBtn.onclick = () => {
+          muted = !muted;
+          muteBtn.textContent = muted ? '🔇' : '🔊';
+          if (muted && !speechSynthesis.paused) speechSynthesis.pause();
+          else if (!muted && speechSynthesis.paused) speechSynthesis.resume();
+        };
+
+        div.appendChild(msgSpan);
+        div.appendChild(muteBtn);
+      } else {
+        div.textContent = text;
+      }
+
+      chatbox.appendChild(div);
+      chatbox.scrollTop = chatbox.scrollHeight;
+    }
+
+    async function sendMessage() {
+      const message = userInput.value.trim();
+      if (!message) return;
+
+      appendMessage('user', message);
+      userInput.value = '';
+
+      try {
+        const response = await fetch('/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message })
+        });
+        const data = await response.json();
+        appendMessage('bot', data.response);
+      } catch (err) {
+        appendMessage('bot', "Error connecting to server.");
+      }
+    }
+
+    function startVoice() {
+      if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+        alert('Your browser does not support speech recognition.');
+        return;
+      }
+
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      recognition.start();
+      appendMessage('bot', 'Speak now!');
+
+      recognition.onresult = (event) => {
+        const speechResult = event.results[0][0].transcript;
+        appendMessage('user', speechResult);
+        sendMessageVoice(speechResult);
+      };
+
+      recognition.onerror = () => {
+        appendMessage('bot', 'Sorry, I could not understand. Please try again.');
+      };
+    }
+
+    async function sendMessageVoice(message) {
+      try {
+        const response = await fetch('/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message })
+        });
+        const data = await response.json();
+        appendMessage('bot', data.response);
+      } catch (err) {
+        appendMessage('bot', "Error connecting to server.");
+      }
+    }
+
+    userInput.addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        sendMessage();
+      }
+    });
+  </script>
+</body>
+</html>

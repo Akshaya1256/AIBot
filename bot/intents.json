@@ -1,0 +1,1256 @@
+{
+        "intents": [
+                {
+                        "tag": "greeting",
+                        "patterns": [
+                                "Hi",
+                                "How are you",
+                                "Is anyone there?",
+                                "Hello",
+                                "Good day",
+                                "Whats up",
+                                "how are ya",
+                                "heyy",
+                                "whatsup"
+                        ],
+                        "responses": [
+                                "Hello!",
+                                "Hi there, how can I help?"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag":"nirf",
+                        "patterns":[
+                                "nirf","nirf rank","what is nirf rank?","What is the nirf ranking of bvrith","nirf rank","NIRF RANK"
+                        ],
+                        "responses":[
+                                "NIRF rank of BVRITH is in between 201-250"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "student chapter",
+                        "patterns": [
+                                "What are different student chapters in BVRITH?",
+                                "Student chapters in BVRITH",
+                                "Student chapters in IT department?",
+                                "various student chapters in college?",
+                                "Which student chapters are present in BVRITH?",
+                                "Are there any student chapters in BVRITH?",
+                                "Co-circular activities",
+                                "what contributes students academic development?",
+                                "professional chapters"
+                        ],
+                        "responses": [
+                                "There are many professional chapters in BVRITH that contribute in students co circular activities.\n ISOI -The Society of Instrumentation professionals \n IETE - Institution of Electronics and Telecommunication Engineers \n SAE - Society of Automotive Engineers \n ASME- American Society of Mechanical Engineers \n IEI- Institution of Engineers (India) \n ACM - Association for Computing Machinery \n IEEE - Institute of Electrical and Electronics Engineers \n CSI - Computer Society of India \n ISTE - Indian Society for Technical Education \n CEA ICI and IGBC"
+                        ],
+                        "context_set": ""
+
+                },
+                
+                {
+                        "tag": "goodbye",
+                        "patterns": [
+                                "cya",
+                                "see you",
+                                "bye bye",
+                                "See you later",
+                                "Goodbye",
+                                "I am Leaving",
+                                "Bye",
+                                "Have a Good day",
+                                "talk to you later",
+                                "tyyl",
+                                "i got to go",
+                                "gtg"
+                        ],
+                        "responses": [
+                                "Sad to see you go :(",
+                                "Talk to you later",
+                                "Goodbye!",
+                                "Come back soon"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "BVRITH",
+                        "patterns": [
+                                "Tell me about BVRITH",
+                                "Give me information about BVRITH?",
+                                "about BVRITH?",
+                                "Ranking of BVRITH?",
+                                "BVRITH ranking",
+                                "Information on BVRITH",
+                                "about college",
+                                "tell me about bvrit hyderabad",
+                                "about bvrit",
+                                "information about bvrit",
+                                "what is bvrit hyderabad",
+                                "bvrit hyderabad details"
+                               ],
+                        "responses": [
+                                "BVRIT HYDERABAD College of Engineering for Women is the youngest college under the umbrella of Sri Vishnu Educational Society, Established in 2012, with the intention of enabling women engineers to reach greater heights, it has already acquired many accolades in academics, placements and technical competitions. "
+                                ],
+                          "context_set": ""
+                 
+                },
+                
+                {
+                        "tag": "Vision",
+                        "patterns": [
+                                "BVRITH vision for the future?",
+                                "What is the vision of BVRITH",
+                                "vision of college",
+                                "BVRITH vision",
+                                "BVRITH vision",
+                                "Vision of BVRITH"
+                               ],
+                        "responses": [
+                                "BVRITH VISION-To be a World Class University providing value-based education, conducting interdisciplinary research in cutting edge technologies leading to sustainable socio-economic development of the nation."
+                                ],
+                          "context_set": ""
+                 
+                },
+ 
+                {
+                        "tag": "Differentiators",
+                        "patterns": [
+                                "BVRITH differentiators till now?",
+                                "What are differentiators of BVRITH?",
+                                "differentiators of college",
+                                "BVRITH differentiators",
+                                "BVRITH differentiators",
+                                "differentiators of BVRITH"
+                               ],
+                        "responses": [
+                                " VEDIC ,VSSC(Vishnu Student Success Center),WISE(Women in Software Technology),ATL(Assistive Technology Lab),GSAC(Graduate Study Abroad Center),Drone Technology Lab, EDC,SDG,NASSCOM,Counselling by Psychologist are few differentiators of BVRITH."
+                                ],
+                          "context_set": ""
+                 
+                },
+                {
+                        "tag": "Mission",
+                        "patterns": [
+                                "BVRITH mission for the future?",
+                                "What is the mission of BVRITH",
+                                "mission of college",
+                                "BVRITH mission",
+                                "BVRITH mission",
+                                "Mission on BVRITH"
+                               ],
+                        "responses": [
+                                "BVRITH MISSION-To produce technically competent and socially responsible engineers, managers and entrepreneurs, who will be future ready.\n To involve students and faculty in innovative research projects linked with industry, academic and research institutions in India and abroad.\n To use modern pedagogy for improving the teaching-learning process."
+                                ],
+                          "context_set": ""
+                 
+                },
+                {
+                        "tag": "name",
+                        "patterns": [
+                                "name",
+                                "your name",
+                                "do you have a name",
+                                "what are you called",
+                                "what is your name",
+                                "what should I call you",
+                                "whats your name?",
+                                "what are you",
+                                "who are you",
+                                "who is this",
+                                "what am i chatting to",
+                                "who am i taking to",
+                                "what are you"
+                        ],
+                        "responses": [
+                                "You can call me BVRITH BOT.",
+                                "I'm BVRITH "
+                               
+                        ],
+                        "context_set": ""
+                },
+            
+                {
+                        "tag": "hours",
+                        "patterns": [
+                                "timing of college",
+                                "what is college timing",
+                                "working days",
+                                "when are you guys open",
+                                "what are your hours",
+                                "hours of operation",
+                                "when is the college open",
+                                "college timing",
+                                "what about college timing",
+                                "is college open on saturday",
+                                "tell something about college timing",
+                                "what is the college  hours",
+                                "when should i come to college",
+                                "when should i attend college",
+                                "what is my college time",
+                                "college timing",
+                                "timing college"
+                        ],
+                        "responses": [
+                                "College is open 9:15 am to 4:30 pm Monday-Saturday!\n Second Saturday is holiday"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "IT HOD",
+                        "patterns":[
+                          "Who is the HOD of IT department?", 
+                          "Who is the Head of the department in IT department?",
+                          "Who is the Head of the department of Information Technology?",
+                          "What is IT HOD name?",
+                          "who is the head of IT department?",
+                          "about IT hod"
+                        ], 
+                        "responses": [
+            
+                          "The head of IT department is Dr. Aruna Rao S L  and visit  https://bvrithyderabad.edu.in/information-technology/about-the-department/ to know more."]
+                      },
+                {
+                        "tag": "IT department",
+                        "patterns":[
+                          "Tell me about IT department?", 
+                          "IT DEPARTMENT", 
+                          "department of Information Technology?",
+                          "Information technology",
+                          "What do you know about IT department",
+                          "briefly about IT department?",
+                          "it department"
+                        ], 
+                        "responses": [
+                          "The Department of Information Technology launched in the year 2012, focus on comprehensive learning to benefit the students in making significant contributions to the Information Technology industry and to serve the society big. \n The department strive obstinately for achieving excellence in computing disciplines from its inception and pursued through its gamut of academic programmes by offering B. Tech (IT) degree with an intake of 60 (120 from 2019) and M. Tech (Data Sciences) with an intake of 18 from 2020.To know more about the department please visit https://bvrithyderabad.edu.in/under-graduate/information-technology/"]
+                },  
+                {
+                    "tag": "hod_cse",
+                    "patterns": [
+                        "Who is the HOD of CSE department?",
+                        "Tell me the head of the CSE department",
+                        "CSE HOD name in BVRIT Hyderabad",
+                        "Who is leading the CSE department?"
+                    ],
+                    "responses": [
+                        "Dr. Sreevani Maddukuri is the Head of the CSE Department at BVRIT Hyderabad. She is a Professor with expertise in Computer Science and Engineering. Visit https://bvrithyderabad.edu.in/computer-science-and-engineering/about-the-department/"
+                    ]
+                },
+                {
+                    "tag": "hod_eee",
+                    "patterns": [
+                        "Who is the HOD of EEE department?",
+                        "Tell me the head of the EEE department",
+                        "EEE HOD name in BVRIT Hyderabad",
+                        "Who is leading the EEE department?"
+                    ],
+                    "responses": [
+                        "Dr. Balusu Srinivasa Rao is the Head of the EEE Department at BVRIT Hyderabad. He is a Professor with rich experience in Electrical & Electronics Engineering. Visit https://bvrithyderabad.edu.in/electrical-and-electronics-engineering/about-the-department/"
+                    ]
+                    },
+                {
+                "tag": "hod_ece",
+                "patterns": [
+                    "Who is the HOD of ECE department?",
+                    "Tell me the head of the ECE department",
+                    "ECE HOD name in BVRIT Hyderabad",
+                    "Who is leading the ECE department?"
+                ],
+                "responses": [
+                    "Dr. Nagesh Deevi is the Head of the ECE Department at BVRIT Hyderabad. He serves as an Associate Professor with expertise in electronics and communication. Visit https://bvrithyderabad.edu.in/electronics-and-communication-engineering/about-the-department/"
+                ]
+            },
+            {
+            "tag": "hod_aiml",
+            "patterns": [
+                "Who is the HOD of CSE AI and ML department?",
+                "Tell me the head of AIML department",
+                "AIML HOD name in BVRIT Hyderabad",
+                "Who leads the CSE AI&ML department?",
+                "aiml hod"
+            ],
+            "responses": [
+                "Dr. Lakshmi Praveena Bellamkonda is the Head of the CSE (AI & ML) Department at BVRIT Hyderabad. You can contact her at hod.aiml@bvrithyderabad.edu.in or +91 99893 73074 and visit https://bvrithyderabad.edu.in/cse-artificial-intelligence-and-machine-learning/about-the-department/ "
+            ]
+            },
+            {
+                "tag": "hod_bsh",
+                "patterns": [
+                "Who is the HOD of Basic Sciences and Humanities department?",
+                "Tell me the head of the BS&H department",
+                "BS&H HOD name in BVRIT Hyderabad",
+                "Who is leading the Basic Sciences and Humanities department?",
+                "BSHD"
+                ],
+                "responses": [
+                "Dr. M. Anita is the Head of the Basic Sciences and Humanities (BS&H) Department at BVRIT Hyderabad College of Engineering for Women. She serves as a Professor of Mathematics with 25 years of teaching experience and 15 years of research experience. You can learn more at https://bvrithyderabad.edu.in/basic-sciences-and-humanities/about-hod/"
+                ]
+                },
+
+
+            {
+            "tag": "research_areas",
+            "patterns": [
+                "What are the research areas at BVRIT Hyderabad?",
+                "Tell me about the research domains in the college",
+                "Which fields does BVRIT Hyderabad focus on for research?",
+                "Research specializations at BVRIT Hyderabad"
+            ],
+            "responses": [
+                "BVRIT Hyderabad engages in diverse research areas including Artificial Intelligence, Machine Learning, Data Science, Cybersecurity, IoT, VLSI Design, Smart Mobility, Renewable Energy, Precision Agriculture, Green Chemistry, and Biomedical Instrumentation. The institution supports these domains through dedicated centers and laboratories."
+            ]
+            },
+                {
+                        "tag": "PG Programs",
+                        "patterns":[
+                          "post graduation programs in BVRITH?", 
+                          "PG programs offered at BVRITH?", 
+                          "PG courses offered?",
+                          "PG program",
+                          "Post graduation programs"
+                        ], 
+                        "responses": [
+                          "PG PROGRAMMES IN BVRITH: \n Master of Technology [M.Tech] Data Sciences\n Master of Technology [M.Tech] (Computer Science and Engineering)\n Master of Technology [M.Tech] (VLSI Design)"]
+                },
+                {
+                        "tag": "location",
+                        "patterns": [
+                                "where is the college located",
+                                "college is located at",
+                                "where is college",
+                                "where is college located",
+                                "address of college",
+                                "how to reach college",
+                                "college location",
+                                "college address",
+                                "wheres the college",
+                                "how can I reach college",
+                                "whats is the college address",
+                                "what is the address of college",
+                                "address",
+                                "location"
+                        ],
+                        "responses": [
+                                "BVRIT Hyderabad College of Engineering for Women is located at Plot No. 8-5/4, Rajiv Gandhi Nagar Colony, Nizampet Road, Bachupally, Hyderabad - 500090, Telangana, India."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "number",
+                        "patterns": [
+
+                                "more info",
+                                "contact info",
+                                "how to contact college",
+                                "college telephone number",
+                                "college number",
+                                "What is your contact no",
+                                "Contact number?",
+                                "how to call you",
+                                "College phone no?",
+                                "how can i contact you",
+                                "Can i get your phone number",
+                                "how can i call you",
+                                "phone number",
+                                "phone no",
+                                "call"
+                        ],
+                        "responses": [
+                                "You can contact at +91 40 4241 7773"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "clubs",
+                        "patterns": [
+                        "What are different clubs in BVRITH?" ,
+                        "what are extra-circular activities in BVRITH?",
+                        "clubs in vnr",
+                        "How many clubs does college have?",
+                        "clubs",
+                        "are there any clubs?",
+                        "What clubs are available at BVRIT Hyderabad?",
+                        "List the student clubs in the college",
+                        "Which clubs does BVRIT Hyderabad have?",
+                        "Tell me about the student organizations at BVRIT Hyderabad",
+                        "what extracurricular activities are there",
+                        "clubs and activities",
+                        "cultural events",
+                        "sports and events"
+ 
+
+                     
+
+                        ],
+                        "responses": [
+                        "BVRIT Hyderabad offers a variety of student clubs across different domains, including community outreach, language and literary activities, cultural and creative arts, wellness and spirituality, sports, technical pursuits, and departmental initiatives. These clubs provide platforms for students to develop skills, engage in extracurricular activities, and contribute to a vibrant campus life. Community Outreach Clubs-NSS Club, Rotaract Club, Nature Club, Voice4Girls.Language & Literary Clubs-Toastmasters Club, Meraki – A Language Club, Foreign Language – German & French, Literary Club.  Wellness & Spirituality Clubs- Cope BVRITH, Yoga, Bhagavad Gita Club,  Sports Club. "
+                        ],
+                        "context_set": ""
+                 },
+                 {
+                        "tag":"IT or CSE",
+                        "patterns":[
+                                "What is the difference between IT and CSE?",
+                                "Which is prefereably better IT or CSE?",
+                                "What do they teach in IT?",
+                                "What do they teach in CSE",
+                                "IT or CSE",
+                                "Which branch do companies prefer CSE or IT?",
+                                "about IT and CSE?",
+                                "It and cse which is better",
+                                "it and cse what to choose",
+                                "IT vs CSE?"      
+                                
+                        ],
+                        "responses":[
+                                "Computer Science Engineering deals with the design and development of computer components, whereas,\n Information Technology is the branch of Engineering that deals with the application of computers in businesses."
+                        ]
+                },
+                {
+                        "tag": "course",
+                        "patterns": [
+                                "list of courses",
+                                "list of courses offered",
+                                "list of courses offered in BVRITH",
+                                "what are the courses offered in your college?",
+                                "courses?",
+                                "courses offered",
+                                "courses offered in BVRITH",
+                                "courses you offer",
+                                "branches?",
+                                "courses available at VNR?",
+                                "branches available at VNR?",
+                                "what are the courses in VNR?",
+                                "what are branches in VNR?",
+                                "what are courses in VNR?",
+                                "branches available in VNR?",
+                                "can you tell me the courses available in VNR?",
+                                "can you tell me the branches available in VNR?",
+                                "different branches",
+                                "different courses",
+                                "branches available?",
+                                "different departments available",
+                                "different departments",
+                                "certification courses offered ",
+                                "certification course",
+                                "training programs",
+                                "training",
+                                "special training"
+                               
+                        ],
+                        "responses": [
+                                " BVRITH has 1)CSE 2)IT 3)CSE(AIML) 4)ECE 5)EEE .First year the students comes under the Basic Sciences and Humanities(BS&H) department."
+                        ],
+                        "context_set": ""
+                },
+               {
+                        "tag":"admissions",
+                        "patterns":[
+                                "what is the admission process at BVRITH?",
+                                "Admission process",
+                                "admit process",
+                                "admitted",
+                                "admit",
+                                "How to get seat in college",
+                                "seat",
+                                "seat in college",
+                                "NRI category",
+                                "eamcet",
+                                "Mains",
+                                "How can I get into BVRITH?", 
+                                "getting into BVRITH?",
+                                "got seat in college?",
+                                "what is the process of admission",
+                                "what is the admission process",
+                               "How to take admission in your college",
+                                "What is the process for admission",
+                                "admission",
+                                "admission process",
+                                "process to admit",
+                                "admit in college?"
+                        ],
+                        "responses":["A Student at BVRITH can be admitted in 3 ways 1)A-cat(eamcet,spot admissions) 2)B-cat(jee main) 3)Nri(12th marks).Last year cutoff ranks are provided for reference http://www.BVRITH.ac.in/download/admissions/FIRST_LAST_EAMCET_2019_RANKS.pdf"],
+                        "context_set": ""
+               },
+               {
+                        "tag": "fees",
+                        "patterns": [
+                                "information about fee",
+                                "information on fee",
+                                "tell me the fee",
+                                "college fee",
+                                "fee per semester",
+                                "what is the fee of each semester",
+                                "what is the fees of each year",
+                                "what is fee",
+                                "what is the fees",
+                                "how much is the fees",
+                                "fees for first year",
+                                "fees",
+                                "about the fees",
+                                "tell me something about the fees"
+                        ],
+                        "responses": [
+                                 "BVRIT Hyderabad fee structure is approximately as follows:\n\nUndergraduate Programs (B.Tech):\n- Tuition Fee: ₹90,000 – ₹1,75,000 per year (varies by batch)\n- NBA Fee: ₹3,000\n- JNTUH/Miscellaneous Fee: ₹2,500 – ₹5,500\n\nPostgraduate Programs (M.Tech):\n- Tuition Fee: ₹1,00,000 per year\n- JNTUH/Miscellaneous Fee: ₹5,500\n\nFor detailed and updated fee structure, visit: https://bvrithyderabad.edu.in/admission/fee-details/"
+                        ],
+                        "context_set": ""
+                },
+                
+                {
+                        "tag": "hostel",
+                        "patterns": [
+                                "hostel facility",
+                                "hostel servive",
+                                "hostel location",
+                                "hostel address",
+                                "hostel facilities",
+                                "hostel fees",
+                                "Does college provide hostel",
+                                "Is there any hostel",
+                                "Where is hostel",
+                                "do you have hostel",
+                                "do you guys have hostel",
+                                "hostel",
+                                "hostel capacity",
+                                "what is the hostel fee",
+                                "how to get in hostel",
+                                "what is the hostel address",
+                                "how far is hostel from college",
+                                "hostel college distance",
+                                "where is the hostel",
+                                "how big is the hostel",
+                                "distance between college and hostel",
+                                "distance between hostel and college"
+                        ],
+                        "responses": [
+                                "BVRIT Hyderabad College of Engineering for Women offers on-campus hostel facilities with 4 blocks comprising over 150 rooms, accommodating more than 500 students. The hostel provides 24/7 water supply, geyser systems, nutritious food, a gym, yoga and sports facilities, and a common room for socializing. Each block is supervised by experienced lady wardens and security officers to ensure safety. The hostel is ragging-free, with an anti-ragging squad monitoring activities. For more details, visit https://bvrithyderabad.edu.in/admission/hostel/"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "event",
+                        "patterns": [
+                                "events organised",
+                                "list of events",
+                                "Fests in college",
+                                "fest",
+                                "technical fest",
+                                "cultural fest",
+                                "Does BVRITH have fests?",
+                                "list of events organised in college",
+                                "list of events conducted in college",
+                                "What events are conducted in college",
+                                "Are there any event held at college",
+                                "Events?",
+                                "functions",
+                                "what are the events",
+                                "tell me about events",
+                                "what about events",
+                                "fests"
+                        ],
+                        "responses": [
+                                "Convergence, Sports Week, Scintillations and various other event conducted in the college.\n For more information you can visit college Website https://bvrithyderabad.edu.in/"
+                        ],
+                        "context_set": ""
+                },
+    
+                
+                {
+                        "tag": "library",
+                        "patterns": [
+                                "is there any library",
+                                "library facility",
+                                "library facilities",
+                                "do you have library",
+                                "does the college have library facility",
+                                "college library",
+                                "where can i get books",
+                                "book facility",
+                                "Where is library",
+                                "Library",
+                                "Tell me about library",
+                                "how many libraries",
+                                "Tell me about the library at BVRIT Hyderabad",
+                                "What facilities does the BVRIT Hyderabad library offer?",
+                                "Does BVRIT Hyderabad have a digital library?",
+                                "What are the library timings at BVRIT Hyderabad?",
+                                "library timings"
+                        ],
+                        "responses": [
+                                "BVRIT Hyderabad College of Engineering for Women offers a comprehensive library equipped with a vast collection of books, journals, and digital resources. The library provides access to online databases like IEEE-ASPP and J-GATE, and features a digital library with internet-enabled computers for accessing NPTEL lectures and online tests. Remote access to resources is available through the KNIMBUS platform. The library operates from 9:00 AM to 6:00 PM on working days, with book issuance from 10:00 AM to 5:00 PM."
+                        ],
+                        "context_set": ""
+                },
+            
+                {
+                        "tag": "canteen",
+                        "patterns": [
+                                "food facilities",
+                                "canteen facilities",
+                                "canteen facility",
+                                "is there any canteen",
+                                "Is there a cafetaria in college",
+                                "Does college have canteen",
+                                "Where is canteen",
+                                "where is cafetaria",
+                                "canteen",
+                                "Cafetaria",
+                                "menu in canteen",
+                                "menu",
+                                "food"
+                        ],
+                        "responses": [
+                                "BVRITH has canteen with variety of food available ,types of stalls like \n 1)fast food \n2)Juice Point \n3)Tiffin \n4)Pani Puri \n5)cafeteria"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "placement",
+                        "patterns": [                             
+                                
+                                "place",
+                                "placed",
+                                "placement",
+                                "Placement summary" ,
+                                "Placement",
+                                "placed in amazon?",
+                                "Placed in deloitte?",
+                                "Give me information about placements at BVRITH",
+                                "Which companies visit BVRITH?",
+                                "How many companies visit BVRITH?",                                
+                                "Placement details",
+                                "Details on placements at BVRITH",
+                                "Brief details on placements ",
+                                "Placement ", 
+                                "high package",
+                                "higher package",
+                                "highest package",
+                                "maximum package",
+                                "max package",
+                                "highest offer",
+                                "high offer",
+                                "higher offer",
+                                "which company provides highest package at BVRITH?",
+                                "which company provides higher package at BVRITH?",
+                                "which company provides high package at BVRITH?",
+                                "which company provides max package at BVRITH?",
+                                "which company provides maximum package at BVRITH?",
+                                "highest package",
+                                "average package",
+                                "avg package",
+                                "avg offer",
+                                "average offer",
+                                "what is the average offer at BVRITH?",
+                                "on average what is the package offered in BVRITH?",
+                                "average packages by companies?",
+                                "low package",
+                                "lower package",
+                                "lowest package",
+                                "minimum package",
+                                "min package",
+                                "low offer",
+                                "lower offer",
+                                "howesr offer",
+                                "less package",
+                                "which company provides lowest package at BVRITH?",
+                                "least package" 
+
+                                ],
+                        "responses": [ "Over 100 companies, including top MNCs and core companies, visit BVRIT Hyderabad every year. In recent batches, more than 950 students were placed. Microsoft offered the highest package of RS.52 LPA, followed by Amazon with Rs.48.6 LPA and VISA with Rs.32.76 LPA. The average salary package ranges between Rs.4 LPA and Rs.6 LPA, with the lowest being around Rs.3.75 LPA. For more information, visit https://bvrithyderabad.edu.in/placements/placement-details/"],
+                        "context_set": ""
+                },
+                {
+                "tag": "preparation",
+                "patterns": [
+                    "How does BVRITH help students prepare for placements?",
+                    "What kind of placement training is provided?",
+                    "Training for placements?",
+                    "Preparation for placement?",
+                    "Does BVRITH give placement training?",
+                    "What preparation support is given for campus placements?",
+                    "Do they train for coding interviews?",
+                    "Is there aptitude training at BVRITH?",
+                    "Does BVRITH offer soft skill training?",
+                    "preparation",
+                    "preparation support",
+                    "interview training",
+                    "aptitude training",
+                    "mock tests",
+                    "mock interviews",
+                    "placement preparation",
+                                "preparation",
+                                "prepare placement",
+                                "start placement preparation",
+                                "prepare for placement",
+                                "how to start placements preparation?"
+                ],
+                "responses": [
+                    "BVRIT Hyderabad offers comprehensive placement training programs to help students prepare for campus recruitment. The training includes aptitude, logical reasoning, and verbal ability sessions; coding and problem-solving practice for technical interviews; soft skills training; and mock interviews with real-time feedback. Special focus is given to competitive coding and group discussions. Training is conducted in collaboration with industry experts and training partners."
+                ]
+
+                },
+                {
+                        "tag": "principal",
+                        "patterns": [
+                                "what is the name of principal",
+                                "whatv is the principal name",
+                                "principal name",
+                                "Who is college principal",
+                                "Where is principal's office",
+                                "principal",
+                                "name of principal"
+                                , "Can you tell me who the college principal is?","who is principal of bvrith"
+                        ],
+                        "responses": [
+                                "Dr.K.V.N.Sunitha is the principal of BVRITH."
+                        ],
+                        "context_set": ""
+                },
+            
+
+                {
+                "tag": "chairman",
+                "patterns": [
+                    "Who is the chairman of BVRITH?",
+                    "Chairman of BVRIT Hyderabad?",
+                    "Tell me about the chairman",
+                    "Name of BVRITH chairman",
+                    "Who heads BVRITH?",
+                    "Who is the head of the college?",
+                    "Chairman details",
+                    "Chairman info",
+                    "BVRIT chairman",
+                    "what is the name of chairman",
+                                "what is the chairman name",
+                                "chairman name",
+                                "Who is college chairman",
+                                "chairman",
+                                "name of chairman"
+                ],
+                "responses": [
+                    "The Chairman of BVRIT Hyderabad is Sri K. V. Vishnu Raju. He is an accomplished industrialist and educationist, and took over the role after the passing of the founder, Padma Bhushan Dr. B. V. Raju, in 2002. He holds degrees from NIT Trichy and Michigan Technological University, USA. Under his leadership, the Sri Vishnu Educational Society has grown into a group of premier educational institutions. Learn more at: https://bvrithyderabad.edu.in/management/"
+                ],
+                "context_set": ""
+                },
+
+            
+                {
+                "tag": "secretary",
+                "patterns": [
+                    "Who is the secretary of BVRITH?",
+                    "Secretary of BVRIT Hyderabad?",
+                    "Tell me about the secretary",
+                    "Name of BVRITH secretary",
+                    "Who is the secretary of the college?",
+                    "Secretary details",
+                    "Secretary info",
+                    "BVRIT secretary",
+                    "what is the name of general secretary",
+                                "what is the general secretary name",
+                                "General secretary name",
+                                "Who is college General secretary",
+                                "General secretary",
+                                "name of General secretary"
+                ],
+                "responses": [
+                    "The Secretary of BVRIT Hyderabad is Sri K. Aditya Vissam. He is the youngest member of the Sri Vishnu Educational Society's management team. Aditya Vissam holds a degree in Industrial Engineering from Penn State University, USA, and an MBA from Imperial College, London. He has professional experience with companies in the US and UK, including Office Depot in Minneapolis and Amazon in London. He brings valuable insights into quality education and future skills integration across SVES institutions. Learn more at: https://bvrithyderabad.edu.in/management/"
+                ],
+                "context_set": ""
+                },
+
+                {
+                "tag": "joint_secretary",
+                "patterns": [
+                    "Who is the joint secretary of BVRITH?",
+                    "Joint secretary of BVRIT Hyderabad?",
+                    "Tell me about the joint secretary",
+                    "Name of BVRITH joint secretary",
+                    "Who is the joint secretary of the college?",
+                    "Joint secretary details",
+                    "Joint secretary info",
+                    "BVRIT joint secretary",
+                    "what is the name of joint secretary",
+                                "what is the joint secretary name",
+                                "Joint secretary name",
+                                "Who is college joint secretary",
+                                "Joint secretary",
+                                "name of joint secretary"
+                ],
+                "responses": [
+                    "The Joint Secretary of Sri Vishnu Educational Society, which oversees BVRIT Hyderabad, is Sri K. Sai Sumant. He holds a Bachelor's degree in Materials Science and Engineering from The Pennsylvania State University and an MBA from the University of California, Irvine. Sri Sai Sumant has professional experience as an R&D Engineer at Glidewell Dental in the USA and is currently serving as the Executive Director at Anjani Tiles Limited. He brings valuable insights into research and development to the institution. Learn more at: https://vishnuschool.edu.in/JointSecretary"
+                ],
+                "context_set": ""
+                },
+                {
+                "tag": "vice_chairman",
+                "patterns": [
+                    "Who is the vice chairman of BVRITH?",
+                    "Vice chairman of BVRIT Hyderabad?",
+                    "Tell me about the vice chairman",
+                    "Name of BVRITH vice chairman",
+                    "Who is the vice chairman of the college?",
+                    "Vice chairman details",
+                    "Vice chairman info",
+                    "BVRIT vice chairman",
+                    "What is the name of vice chairman?",
+                    "What is the vice chairman name?",
+                    "Vice chairman name",
+                    "Who is college vice chairman?",
+                    "Vice chairman",
+                    "Name of vice chairman"
+                ],
+                "responses": [
+                    "The Vice Chairman of Sri Vishnu Educational Society, which oversees BVRIT Hyderabad, is Sri Ravichandran Rajagopal. He holds a Bachelor of Technology in Mechanical Engineering from NIT Tiruchirappalli and an MBA from IIM Calcutta. He has professional experience in business development and new product development with Novartis India. Learn more at: https://bvrithyderabad.edu.in/"
+                ],
+                "context_set": ""
+                },
+
+
+                
+                {
+                        "tag": "sem",
+                        "patterns": [
+                                "exam dates",
+                                "exam schedule",
+                                "When is semester exam",
+                                "Semester exam timetable",
+                                "sem",
+                                "semester",
+                                "exam",
+                                "when is exam",
+                                "exam timetable",
+                                "exam dates",
+                                "when is semester"
+                        ],
+                        "responses": [
+                                "Semester exams at BVRIT Hyderabad are typically conducted at the end of each academic term as per the JNTUH academic calendar. These exams are held offline in most cases and include both internal assessments (mid exams) and external end-semester exams. Students should check the official college portal or notice board regularly for updates on exam timetables, hall tickets, and guidelines."
+                        ],
+                        "context_set": ""
+                },
+        
+                {
+                        "tag": "facilities",
+                        "patterns": [
+                                "What facilities college provide",
+                                "facility",
+                                "how are facilities in college",
+                                "College facility",
+                                "What are college facilities",
+                                "facilities",
+                                "facilities provided"
+                        ],
+                        "responses": [
+                                "1.The institution has adequate facilities for teaching - learning. viz., classrooms, laboratories, computing equipment, etc \n 2.support facilities - laboratory, library, sports complex, computers, classrooms etc. \n 3.The institution has adequate facilities for sports, games (indoor, outdoor),gymnasium, yoga centre etc., and cultural activities \n 4. Library as a Learning Resource-Library is automated using Integrated Library Management System (LMS) \n 5.Collection of  books, manuscripts, special reports or any other knowledge resource for library enrichment \n 6.Institution frequently updates its IT facilities including Wi-Fi ,Maintenance of Campus Infrastructure \n 7.There are established systems and procedures for maintaining and utilizing physical, academic and support facilities - laboratory, library, sports complex, computers, classrooms etc."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "college intake",
+                        "patterns": [
+                                "max number of students",
+                                "number of seats per branch",
+                                "number of seats in each branch",
+                                "maximum number of seats",
+                                "maximum students intake",
+                                "What is college intake",
+                                "how many stundent are taken in each branch",
+                                "seat allotment",
+                                "seats"
+                        ],
+                        "responses": [
+                               "BVRIT Hyderabad College of Engineering for Women offers a total intake of 540 seats for its B.Tech programs. The distribution across various branches is as follows:\n\n- Computer Science and Engineering (CSE): 180 seats\n- CSE with Artificial Intelligence and Machine Learning: 60 seats\n-  Electronics and Communication Engineering (ECE): 120 seats\n- Electrical and Electronics Engineering (EEE): 60 seats\n- Information Technology (IT): 120 seats\n\nThese details are based on the information provided by the college's official sources."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "uniform",
+                        "patterns": [
+                                "college dress code",
+                                "college dresscode",
+                                "what is the uniform",
+                                "can we wear casuals",
+                                "Does college have an uniform",
+                                "Is there any uniform",
+                                "uniform",
+                                "what about uniform",
+                                "do we have to wear uniform"
+                        ],
+                        "responses": [
+                                "BVRITH does not have uniform"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "salutaion",
+                        "patterns": [
+                                "okk",
+                                "okie",
+                                "nice work",
+                                "well done",
+                                "good job",
+                                "thanks for the help",
+                                "Thank You",
+                                "its ok",
+                                "Thanks",
+                                "k",
+                                "ok",
+                                "okay"
+                        ],
+                        "responses": [
+                                "I am glad I helped you"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "task",
+                        "patterns": [
+                                "what can you do",
+                                "what are the thing you can do",
+                                "things you can do",
+                                "what can u do for me",
+                                "how u can help me",
+                                "why i should use you"
+                        ],
+                        "responses": [
+                                "I could answer to low-intermediate questions regarding college",
+                                "You can ask me questions regarding college, and i will try to answer them"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag":"ragging",
+                        "patterns":[
+                                "ragging",
+                                "is ragging practice active in college",
+                                "does college have any antiragging facility",
+                                "is there any ragging cases",
+                                "is ragging done here",
+                                "ragging juniors",
+                                "ragging history",
+                                "ragging incidents"
+                                
+                        ],
+                        "responses": [
+                                "We are Proud to tell you that our college provides ragging free environment, and we have strict rules against ragging"
+                        ]
+
+                },
+               
+            
+               
+                {
+                        "tag": "staff details",
+                        "patterns": [
+                                "Can I get the details of Principal & Faculty Members at BVRITH?",
+                                "faculty details at vnr",
+                                "faculty",
+                                "Staff details",
+                                "staff",
+                                "faculty details",
+                                "Who are the faculty members of BVRIT Hyderabad?",
+                                "List of faculty at BVRIT Hyderabad College of Engineering for Women",
+                                "Tell me about the faculty at BVRIT Hyderabad",
+                                "Faculty details of BVRIT Hyderabad",
+                                "Who teaches at BVRIT Hyderabad College of Engineering for Women?",
+                                "BVRIT Hyderabad faculty list",
+                                "Faculty members of BVRIT Hyderabad",
+                                "What are the departments at BVRIT Hyderabad and their faculty?",
+                                "BVRIT Hyderabad faculty information",
+                                "Faculty profiles at BVRIT Hyderabad"
+                        ],
+                        "responses": [ "BVRIT Hyderabad College of Engineering for Women has a diverse and experienced faculty across various departments. For detailed information about the faculty members in each department, you can visit the respective department's faculty page:\n\n- [Computer Science and Engineering Faculty](https://bvrithyderabad.edu.in/computer-science-and-engineering/faculty/)\n- [Information Technology Faculty](https://bvrithyderabad.edu.in/information-technology/faculty/)\n- [Basic Sciences and Humanities Faculty](https://bvrithyderabad.edu.in/basic-sciences-and-humanities/faculty/)\n- [Electronics and Communication Engineering Faculty](https://bvrithyderabad.edu.in/electronics-and-communication-engineering/faculty/)\n- [Electrical and Electronics Engineering Faculty](https://bvrithyderabad.edu.in/electrical-and-electronics-engineering/faculty/)\n- [CSE - Artificial Intelligence and Machine Learning Faculty](https://bvrithyderabad.edu.in/cse-artificial-intelligence-and-machine-learning/faculty/)\n\nThese pages provide comprehensive details about the faculty members, including their designations, qualifications, and areas of expertise."]
+                 },
+                 {
+        "tag": "academic_programs",
+        "patterns": [
+            "what programs are offered",
+            "what courses are available",
+            "which programs does bvrit offer",
+            "list of courses",
+            "undergraduate and postgraduate programs"
+        ],
+        "responses": [
+             "BVRIT Hyderabad offers undergraduate (B.Tech) programs in Computer Science and Engineering (CSE), Information Technology (IT), Electronics and Communication Engineering (ECE), Electrical and Electronics Engineering (EEE), and Artificial Intelligence & Machine Learning (AIML). It also offers postgraduate (M.Tech) programs in Data Science, Computer Science and Engineering, and VLSI Design."
+        ],
+        "context_set": ""
+    },{
+        "tag": "affiliation",
+        "patterns": [
+            "is bvrit affiliated",
+            "affiliation of bvrit",
+            "which university is bvrit affiliated to",
+            "is bvrit approved"
+        ],
+        "responses": [
+            "Yes, BVRIT Hyderabad is affiliated with JNTU Hyderabad and is approved by AICTE."
+        ],
+        "context_set": ""
+    },
+    {
+
+        "tag": "academic_calendar",
+        "patterns": [
+            "what is the academic calendar",
+            "academic schedule",
+            "semester dates",
+            "when does the semester start"
+        ],
+        "responses": [
+            "BVRIT follows a semester-based academic calendar under JNTUH regulations."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "faculty_qualifications",
+        "patterns": [
+            "what are the qualifications of faculty",
+            "faculty qualifications",
+            "education of teachers",
+            "faculty degrees"
+        ],
+        "responses": [
+            "Faculty at BVRIT hold M.Tech and Ph.D. degrees with extensive teaching and research experience."
+        ],
+        "context_set": ""
+    
+    },
+    {
+        "tag": "hostel_fees",
+        "patterns": [
+            "what are hostel fees",
+            "hostel charges",
+            "cost of hostel",
+            "hostel fee structure"
+        ],
+        "responses": [
+            "Hostel fees vary each year. Contact the office for the latest fee structure."
+        ],
+        "context_set": ""
+    },
+  
+ 
+    {
+        "tag": "scholarships",
+        "patterns": [
+            "are scholarships available",
+            "scholarships",
+            "financial aid",
+            "fee concessions"
+        ],
+        "responses": [
+            "Yes, scholarships are provided through government schemes and merit-based awards."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "fee_reimbursement",
+        "patterns": [
+            "how to apply for fee reimbursement",
+            "fee refund",
+            "reimbursement process",
+            "how to get fee reimbursement"
+        ],
+        "responses": [
+            "Eligible students can apply through the Telangana ePASS portal."
+        ],
+        "context_set": ""
+    },
+          {
+        "tag": "companies_for_placements",
+        "patterns": [
+            "what companies visit for placements",
+            "top recruiters",
+            "which companies recruit",
+            "companies for placements"
+        ],
+        "responses": [
+            "Top companies like Infosys, TCS, Capgemini, Accenture, and Amazon etc.., you can refer to the official placement details page: [BVRIT Hyderabad Placement Details](https://bvrithyderabad.edu.in/placements/placement-details/)"
+        ],
+        "context_set": ""
+    },       
+
+        {
+        "tag": "internships",
+        "patterns": [
+            "are internships compulsory",
+            "internships",
+            "internship requirements",
+            "do we have internships"
+        ],
+        "responses": [
+            "Yes,  BVRIT Hyderabad College of Engineering for Women offers a range of internship opportunities across various industries. Students have secured internships with leading companies such as Microsoft, Amazon, Qualcomm, Flipkart, Target, Qlik, and many others. These internships typically span 2 to 6 months, with stipends reaching up to ₹1.1 lakh per month. For detailed information on available internships, please visit the official internships page: [BVRIT Hyderabad Internships](https://bvrithyderabad.edu.in/placements/internships/)"
+        ],
+        "context_set": ""
+    },   
+
+    {
+        "tag": "transport",
+        "patterns": [
+            "is transport available",
+            "bus facility",
+            "college transport",
+            "bus services"
+        ],
+        "responses": [
+            "Yes, BVRIT provides bus facilities from multiple locations across Hyderabad.For detailed route information and contact details, please refer to the official transportation page: [BVRIT Hyderabad Transportation](https://bvrithyderabad.edu.in/admission/transportation/)."
+        ],
+        "context_set": ""
+    },
+     {
+        "tag": "wifi",
+        "patterns": [
+            "is wi-fi available on campus",
+            "wifi on campus",
+            "internet facility",
+            "is internet available"
+        ],
+        "responses": [
+            "Yes, Wi-Fi is available across the campus for students and staff."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "lab_facilities",
+        "patterns": [
+            "what lab facilities are available",
+            "labs in college",
+            "laboratory facilities",
+            "available labs"
+        ],
+        "responses": [
+            "The college has well-equipped labs in all departments including AI/ML, Data Science, IoT, and more."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "contact_admissions",
+        "patterns": [
+            "how to contact admissions office",
+            "admissions contact",
+            "contact details for admissions",
+            "admissions office phone"
+        ],
+        "responses": [
+            "You can reach the admissions office at +91-40 4241 7773 or email info@bvrithyderabad.edu.in. or  principal@bvrithyderabad.edu.in"
+        ],
+        "context_set": ""
+    },
+   
+    {
+        "tag": "campus_tour",
+        "patterns": [
+            "is there a campus tour for parents",
+            "campus tour",
+            "visit campus",
+            "college tour"
+        ],
+        "responses": [
+            "Yes, you can request a campus tour by contacting the admissions office. you can refer https://www.youtube.com/@BvritHyderabadWomen"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "womens_college",
+        "patterns": [
+            "is this a women's college",
+            "is bvrit only for girls",
+            "women's college",
+            "girls only college"
+        ],
+        "responses": [
+            "Yes, BVRIT Hyderabad is an engineering college exclusively for women."
+        ],
+        "context_set": ""
+    },
+ 
+ 
+    {
+        "tag": "top_recruiters",
+        "patterns": [
+            "who are the top recruiters",
+            "top companies hiring",
+            "companies that visit for placements",
+            "best recruiters"
+        ],
+        "responses": [
+            "Top recruiters at BVRIT Hyderabad include Microsoft, Amazon, Visa, Flipkart, Walmart, DE Shaw, IBM, Capgemini, Infosys, Wipro, and TCS. you can refer to the official placement details page: [BVRIT Hyderabad Placement Details](https://bvrithyderabad.edu.in/placements/placement-details/)"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "autonomy",
+        "patterns": [
+            "is this autonomous",
+            "is bvrit autonomous",
+            "does bvrit have autonomous status",
+            "autonomous college"
+        ],
+        "responses": [
+            "Yes, BVRIT Hyderabad is an autonomous institution recognized by the Telangana government."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "hi",
+        "patterns": [
+            "hi",
+            "hii",
+            "hiii",
+            "hiiii",
+            "hiiiii",
+            "hiiiiii",
+            "hello",
+            "hey",
+            "hola"
+        ],
+        "responses": [
+            "Hi there! How can I help you today?"
+        ],
+        "context_set": ""
+    },
+    {
+  "tag": "exam_codes",
+  "patterns": [
+    "What is the EAMCET code for BVRIT Hyderabad?",
+    "Tell me the PGECET code for BVRIT Hyderabad",
+    "EAMCET and PGECET codes",
+    "College code for BVRIT Hyderabad",
+    "BVRIT Hyderabad EAMCET code",
+    "BVRIT Hyderabad PGECET code",
+    "EAMCET code",
+    "PGECET code"
+  ],
+  "responses": [
+    "The EAMCET code for BVRIT Hyderabad College of Engineering for Women is BVRW.",
+    "The PGECET code for BVRIT Hyderabad College of Engineering for Women is BVRW1.",
+    "Use BVRW for TS EAMCET and BVRW1 for TS PGECET when selecting BVRIT Hyderabad during counseling."
+  ],
+  "context_set": ""
+},
+{
+  "tag": "college_approval",
+  "patterns": [
+    "What is BVRITH approved by?",
+    "Which bodies approve BVRIT Hyderabad?",
+    "Is BVRITH AICTE approved?",
+    "Is BVRITH affiliated to JNTUH?",
+    "What accreditations does BVRITH have?",
+    "Is BVRITH UGC approved?",
+    "BVRITH recognition",
+    "BVRITH affiliations",
+    "college is approved by",
+    "who approved the college",
+    "bvrith approval bodies",
+    "AICTE approved"
+
+  ],
+  "responses": [
+    "BVRIT Hyderabad is approved by the All India Council for Technical Education (AICTE), affiliated to Jawaharlal Nehru Technological University Hyderabad (JNTUH), and has been granted autonomous status by the University Grants Commission (UGC). It is also accredited by the National Board of Accreditation (NBA) for EEE, ECE, CSE, and IT programs, and by the National Assessment and Accreditation Council (NAAC) with an 'A' grade. Learn more at: https://bvrithyderabad.edu.in/about-bvrith/"
+  ]
+}
+
+
+ 
+
+        ]
+}
